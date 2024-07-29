@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: aliceblue;
+}
+
+.menu-icon {
+    
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.sidebar {
+  width: 200px;
+  height: 100%;
+  background-color: cornsilk;
+  position: fixed;
+  top: 33px;
+  left: -200px;
+  transition: 0.3s;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.sidebar-link:hover {
+  background-color: white;
+}
+
+.sidebar-link svg {
+  margin-right: 10px;
+}
